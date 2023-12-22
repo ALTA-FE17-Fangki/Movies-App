@@ -1,0 +1,112 @@
+[
+  {
+    "title": "The Departed",
+    "poster": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/510gCMld+uL._AC_UF894,1000_QL80_.jpg",
+    "detail": {
+      "releaseDate": "2006-10-06",
+      "genre": ["Crime", "Drama", "Thriller"],
+      "director": "Martin Scorsese",
+      "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"],
+      "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in Boston."
+    }
+  },
+  {
+    "title": "Inception",
+    "poster": "https://www.movieposters.com/cdn/shop/products/7dfddd911b8040729896c5be83f8e139_6e2f4149-8cb4-414c-a33b-9e0065c55af3_500x.jpg?v=1573585216",
+    "detail": {
+      "releaseDate": "2010-07-16",
+      "genre": ["Action", "Adventure", "Sci-Fi"],
+      "director": "Christopher Nolan",
+      "actors": ["Leonardo DiCaprio", "Ellen Page", "Tom Hardy"],
+      "plot": "A thief who enters the dreams of others to steal their secrets."
+    }
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+    "detail": {
+      "releaseDate": "1994-09-23",
+      "genre": ["Drama"],
+      "director": "Frank Darabont",
+      "actors": ["Tim Robbins", "Morgan Freeman"],
+      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+    }
+  },
+  {
+    "title": "The Dark Knight",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
+    "detail": {
+      "releaseDate": "2008-07-18",
+      "genre": ["Action", "Crime", "Drama"],
+      "director": "Christopher Nolan",
+      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+      "plot": "When the menace known as The Joker emerges, Batman must confront one of the greatest psychological tests of his ability to fight injustice."
+    }
+  },
+  {
+    "title": "Pulp Fiction",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
+    "detail": {
+      "releaseDate": "1994-10-14",
+      "genre": ["Crime", "Drama"],
+      "director": "Quentin Tarantino",
+      "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+      "plot": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+    }
+  },
+  {
+    "title": "Forrest Gump",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
+    "detail": {
+      "releaseDate": "1994-07-06",
+      "genre": ["Drama", "Romance"],
+      "director": "Robert Zemeckis",
+      "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+      "plot": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75."
+    }
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_FMjpg_UX1000_.jpg",
+    "detail": {
+      "releaseDate": "2014-03-07",
+      "genre": ["Adventure", "Comedy", "Crime"],
+      "director": "Wes Anderson",
+      "actors": ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric"],
+      "plot": "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge."
+    }
+  },
+  {
+    "title": "Blade Runner",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
+    "detail": {
+      "releaseDate": "1982-06-25",
+      "genre": ["Sci-Fi", "Thriller"],
+      "director": "Ridley Scott",
+      "actors": ["Harrison Ford", "Rutger Hauer", "Sean Young"],
+      "plot": "A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator."
+    }
+  },
+  {
+    "title": "Inglourious Basterds",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg",
+    "detail": {
+      "releaseDate": "2009-08-21",
+      "genre": ["Adventure", "Drama", "War"],
+      "director": "Quentin Tarantino",
+      "actors": ["Brad Pitt", "Diane Kruger", "Eli Roth"],
+      "plot": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same."
+    }
+  },
+  {
+    "title": "Interstellar",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "detail": {
+      "releaseDate": "2014-11-07",
+      "genre": ["Adventure", "Drama", "Sci-Fi"],
+      "director": "Christopher Nolan",
+      "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+      "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    }
+  }
+]
