@@ -27,7 +27,7 @@ class PopUp extends Component<PopUpProps> {
               </div>
               <div>
                 <span className="font-bold">Release date: </span>
-                {data.release_date}
+                {data.detail.releaseDate}
               </div>
               <div>
                 <span className="font-bold">Genre: </span>

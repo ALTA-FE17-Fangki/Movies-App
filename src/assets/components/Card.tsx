@@ -11,13 +11,20 @@ class Card extends Component<CardProps> {
     return (
       <div className="bg-amber-100 w-80 text-gray-800 flex flex-col items-center">
         <img
+          style={{ cursor: "pointer" }}
           onClick={() => onPopUp(data)}
           src={data.poster}
           alt="Movie Poster"
           className="aspect-[2/3] object-cover"
         />
 
-        <div className="h-16 font-bold text-lg flex justify-center items-center">{data.title}</div>
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => onPopUp(data)}
+          className="h-16 font-bold text-lg flex justify-center items-center"
+        >
+          {data.title}
+        </div>
       </div>
     );
   }
