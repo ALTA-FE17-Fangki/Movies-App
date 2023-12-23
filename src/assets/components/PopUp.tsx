@@ -19,7 +19,10 @@ class PopUp extends Component<PopUpProps> {
             X
           </div>
           <div className="flex h-full w-full flex-wrap items-center justify-center gap-10">
-            <img className="h-96 w-72 " src={data.poster} />
+            <img
+              className="h-96 w-72 "
+              src={`https://image.tmdb.org/t/p/w500${data.poster_path}` || data.poster}
+            />
             <div className="flex flex-col justify-between text-black">
               <div className="">
                 <span className="font-bold">Title: </span>
@@ -27,15 +30,15 @@ class PopUp extends Component<PopUpProps> {
               </div>
               <div>
                 <span className="font-bold">Release date: </span>
-                {data.detail.releaseDate}
+                {data.release_date || data.detail.releaseDate}
               </div>
               <div>
                 <span className="font-bold">Genre: </span>
-                {data.detail.genre.join(", ")}
+                {data.genre_ids.join(", ") || data.detail.genre.join(", ")}
               </div>
               <div>
                 <span className="font-bold">Overview: </span>
-                {data.detail.plot}
+                {data.overview || data.detail.plot}
               </div>
             </div>
           </div>
