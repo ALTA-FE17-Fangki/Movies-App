@@ -8,6 +8,8 @@ interface PopUpProps {
 class PopUp extends Component<PopUpProps> {
   render() {
     const { onclick, data } = this.props;
+    console.log(data);
+
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white p-6 rounded-lg w-[500px]">
@@ -21,7 +23,11 @@ class PopUp extends Component<PopUpProps> {
           <div className="flex h-full w-full flex-wrap items-center justify-center gap-10">
             <img
               className="h-96 w-72 "
-              src={`https://image.tmdb.org/t/p/w500${data.poster_path}` || data.poster}
+              src={
+                data.poster_path
+                  ? `https://image.tmdb.org/t/p/w500${data.poster_path}`
+                  : data.poster
+              }
             />
             <div className="flex flex-col justify-between text-black">
               <div className="">
@@ -34,7 +40,7 @@ class PopUp extends Component<PopUpProps> {
               </div>
               <div>
                 <span className="font-bold">Genre: </span>
-                {data.genre_ids.join(", ") || data.detail.genre.join(", ")}
+                {data.genre_Names ? data.genre_Names.join(", ") : data.detail.genre.join(", ")}
               </div>
               <div>
                 <span className="font-bold">Overview: </span>

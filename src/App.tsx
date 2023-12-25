@@ -8,6 +8,7 @@ import axios from "axios";
 interface AppState {
   shownPopUp: boolean;
   movieData: any;
+  genres: any;
 }
 
 interface nowPlayingState {
@@ -21,6 +22,7 @@ export class App extends Component<{}, AppState & nowPlayingState> {
       shownPopUp: false,
       movieData: {},
       datas: [],
+      genres: [],
     };
 
     this.handleOpenPopUp = this.handleOpenPopUp.bind(this);
@@ -35,6 +37,13 @@ export class App extends Component<{}, AppState & nowPlayingState> {
     this.setState({ shownPopUp: false });
   }
 
+  getGenreNames(genreIds: number[], dataGenre: any[]) {
+    return genreIds.map((genreId) => {
+      const genre = dataGenre.find((item: any) => item.id === genreId);
+      return genre ? genre.name : "";
+    });
+  }
+
   getAllNowPlaying() {
     axios
       .get("https://api.themoviedb.org/3/movie/now_playing", {
@@ -44,8 +53,25 @@ export class App extends Component<{}, AppState & nowPlayingState> {
         },
       })
       .then((response) => {
-        this.setState({ datas: response.data.results });
-        console.log(response.data);
+        const movies = response.data.results;
+
+        axios
+          .get("https://api.themoviedb.org/3/genre/movie/list", {
+            headers: {
+              Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmOGFiNzBhNTZkYWQ0OTIwOWEwN2EyMTk1YjQwMGIwZiIsInN1YiI6IjY1Njk4MjAxZDM5OWU2MDBjNDBmYjRhYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qkFPicxaue4i1QpZiZWCrV4uEaJCsWQlnmCgzjmP8Vw",
+            },
+          })
+          .then((resGenre) => {
+            const movieDataWithGenres = movies.map((movie: any) => {
+              const genreNames = this.getGenreNames(movie.genre_ids, resGenre.data.genres);
+              return { ...movie, genre_Names: genreNames };
+            });
+            this.setState({ datas: movieDataWithGenres });
+          })
+          .catch((error) => {
+            console.log(error);
+          });
       })
       .catch((error) => {
         console.log(error);
