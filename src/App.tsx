@@ -13,6 +13,7 @@ interface AppState {
 
 interface nowPlayingState {
   datas: [];
+  content: [];
 }
 
 export class App extends Component<{}, AppState & nowPlayingState> {
@@ -23,6 +24,7 @@ export class App extends Component<{}, AppState & nowPlayingState> {
       movieData: {},
       datas: [],
       genres: [],
+      content: [],
     };
 
     this.handleOpenPopUp = this.handleOpenPopUp.bind(this);
@@ -42,6 +44,23 @@ export class App extends Component<{}, AppState & nowPlayingState> {
       const genre = dataGenre.find((item: any) => item.id === genreId);
       return genre ? genre.name : "";
     });
+  }
+
+  getData(id: string) {
+    axios
+      .get(`https://api.themoviedb.org/3/movie/${id}`, {
+        headers: {
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmOGFiNzBhNTZkYWQ0OTIwOWEwN2EyMTk1YjQwMGIwZiIsInN1YiI6IjY1Njk4MjAxZDM5OWU2MDBjNDBmYjRhYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qkFPicxaue4i1QpZiZWCrV4uEaJCsWQlnmCgzjmP8Vw",
+        },
+      })
+      .then((response) => {
+        this.setState({ content: response.data.results });
+        console.log("got by id: ", response.data.results);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   getAllNowPlaying() {
